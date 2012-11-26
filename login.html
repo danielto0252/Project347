@@ -1,55 +1,28 @@
-<!doctype>
+<!DOCTYPE>
 <html>
 	<head>
-		<title>Login | Dave's Express Delivery</title>
+		<title>Dave's Express | Login</title>
 	</head>
 	<nav>
 		<h1>
 			<a id="logo" href="index">Dave's Delivery</a>
 		</h1>
-		<ul class="navSections">
+		<ul class="navSections" >
 			<li><a href="index">Home</a></li>
 			<li><a href="menu">Menu</a></li>
 			<li><a href="login">Login</a></li>
 		</ul>
 	</nav>
 	<body>
-		<p>
-			<label>
-				Full Name:
-				<input type="text" name="fullname" size="60"/>
-				<br>
-			</label>
-			<label>
-				Address:
-				<input type="text" name="address" size="100"/>
-				<br>
-			</label>
-			<label>
-				Phone Number:
-				<input type="tel" name="phone"/>
-				<br>
-			</label>
-			<label>
-				Username: 
-				<input type="text" name="username" size="25"/>
-				<br>
-			</label>
-			<label>
-				Password:
-				<input type="password" name="password" size="32"/>
-				<br>
-			</label>
-			<label>
-				Security Question:
-				<input type="text" name="question" size="100"/>
-				<br>
-			</label>
-			<label>
-				Security Answer:
-				<input type="text" name="answer" size="50"/>
-				<br>
-			</label>
-		</p>
+
+		<form method="post" action="#">
+			<label>Username: </label>
+			<input type="text" size="25" name="username" id="username" />
+			<label>Password: </label>
+			<input type="password" size="25" name="password" id="password" />
+			<input type="submit" value="Login" name="submit" />
+		</form>
+
+		<a href="#">Forgot your password?</a>
 	</body>
-<html>
+</html>
